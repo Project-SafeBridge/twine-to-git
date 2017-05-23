@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>{{ username }} said:</h1>
+    <p>
+        {{ message }}
+    </p>
+    <h2>{{ username }} uploaded a file:</h2>
+    <p>
+        {{ fileupload }}
+    </p>
+    <a href="{{ url_for('home') }}">Upload something else</a>
+{% endblock %}
