@@ -45,6 +45,8 @@ def commit_project(user_name, commit_message, html):
 # ROUTES
 
 @app.route('/')
+def ping():
+    return "Hello, World!"
 
 @app.route('/save', methods=['POST'])
 @cross_origin()
