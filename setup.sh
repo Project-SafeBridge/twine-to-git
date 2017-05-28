@@ -6,7 +6,7 @@ ROOT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 REPO_URL="git@github.com:gersh/safebridge.git"
 PROJECT_PATH="${ROOT_PATH}/safebridge"
 BUILD_SCRIPT="${PROJECT_PATH}/twee/build.sh"
-DEVELOP_BRANCH="twine-to-twee"
+DEVELOP_BRANCH="conversation-flow"
 
 # Clone repo
 echo "Cloning..."

@@ -15,7 +15,7 @@ UNBUILD_SCRIPT="${PROJECT_PATH}/twee/unbuild.sh"
 COMMIT_MESSAGE="${ROOT_PATH}/commit_message.txt"
 
 BRANCH_PREFIX="users-"
-DEVELOP_BRANCH="twine-to-twee"
+DEVELOP_BRANCH="conversation-flow"
 
 USER_NAME="$1"
 USER_EMAIL="$2"
