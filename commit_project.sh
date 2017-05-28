@@ -44,7 +44,8 @@ cp -r "$PROJECT_UNBUILD_SRC_PATH" "$PROJECT_SRC_PATH"
 
 # Commit
 echo "Committing..."
-git -C "$PROJECT_SRC_PATH" diff-index --quiet --cached HEAD || git -C "$PROJECT_SRC_PATH" commit -a -F "$COMMIT_MESSAGE"
+git -C "$PROJECT_SRC_PATH" add .
+git -C "$PROJECT_SRC_PATH" diff-index --quiet --cached HEAD || git -C "$PROJECT_SRC_PATH" commit -F "$COMMIT_MESSAGE"
 
 # Push
 echo "Pushing..."
