@@ -25,8 +25,7 @@ HTML_FILE = 'stella.html'
 def commit_project(user_name, commit_message, html):
     print('Handling commit request from {}:\n{}'.format(user_name, commit_message))
     if not commit_message:
-        commit_message = "Test commit."
-        #raise ValueError('Empty commit message!')
+        raise ValueError('Empty commit message!')
     if not html:
         raise ValueError('Empty Twine HTML file!')
     try:
